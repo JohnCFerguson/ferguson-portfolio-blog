@@ -1,29 +1,19 @@
 <script context="module">
+  import MobileNav from './navigation/MobileNav.svelte'
   import {page} from '$app/stores'
 </script>
 
 <script>
-  export let blogTitle = 'My Blog'
-
   let path
   $: ({path} = $page)
 </script>
 
-<header>
-  <span>{blogTitle}</span>
-  <nav>
-    <ul>
-      <li><a data-selected={path === '/'} href="/">home</a></li>
-    </ul>
-  </nav>
+<header class='sticky top-0 z-50 shadow-md bg-white px-1'>
+  <a class='left-0 logo' data-selected={path === '/'} href="/">Logo</a>
+  <MobileNav />
 </header>
 
 <style>
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
   a[data-selected='true'] {
     font-weight: 600;
     color: #555;
@@ -40,10 +30,9 @@
     align-items: flex-start;
     padding: 1em;
   }
-  @media screen and (min-width: 400px) {
-    header {
-      flex-direction: row-reverse;
-      align-items: center;
+  @media only screen and (max-width: 767px) {
+    .logo {
+      display: none;
     }
   }
 </style>

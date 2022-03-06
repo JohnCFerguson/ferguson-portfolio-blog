@@ -1,16 +1,19 @@
 <script>
+  import '../styles/tailwind-output.css'
   import Header from '$lib/Header.svelte'
   import Footer from '$lib/Footer.svelte'
+  import SideNav from '$lib/navigation/SideNav.svelte'
+  import MobileNav from '$lib/navigation/MobileNav.svelte'
+
+  let open = false
 </script>
 
-<Header blogTitle={'SvelteKit x Sanity Blog'} />
-
-<main style="padding: 1em">
+<Header />
+<SideNav />
+<main class='content-area'>
   <slot />
 </main>
-
 <Footer />
-
 <style>
   :global(a) {
     color: #1a4d9e;

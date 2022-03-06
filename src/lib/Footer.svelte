@@ -1,4 +1,5 @@
-<footer>
+<footer class='absolute mt-8 left-1/2 transform -translate-x-1/2
+ flex items-center justify-center bg-white'>
   <a href="https://sanity.io">
     <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
       ><rect width="28" height="28" rx="3" fill="#F03E2F" /><path
@@ -35,15 +36,6 @@
 </footer>
 
 <style>
-  footer {
-    text-align: center;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1em;
-  }
   svg {
     width: 50px;
   }

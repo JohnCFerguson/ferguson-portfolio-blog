@@ -13,8 +13,8 @@
 <style>
   section {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 3rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem 1.5rem;
     margin-top: 3rem;
   }
 </style>
