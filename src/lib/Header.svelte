@@ -8,8 +8,8 @@
   $: ({path} = $page)
 </script>
 
-<header class='sticky top-0 z-50 shadow-md bg-white px-1'>
-  <a class='left-0 logo' data-selected={path === '/'} href="/">Logo</a>
+<header class="sticky top-0 z-50 shadow-md bg-white px-1">
+  <a class="left-0 logo" data-selected={path === '/'} href="/">Logo</a>
   <MobileNav />
 </header>
 

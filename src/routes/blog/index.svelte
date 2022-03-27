@@ -13,8 +13,8 @@
 </script>
 
 <script>
-    import PostsGrid from '$lib/PostsGrid.svelte'
-    export let posts
+  import PostsGrid from '$lib/PostsGrid.svelte'
+  export let posts
 </script>
 
 <PostsGrid {posts} />

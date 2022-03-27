@@ -34,29 +34,31 @@
 </script>
 
 <div>
-<h1 class="text-center py-8 px-4 rounded-lg border-indigo-900 shadow-xl font-bold m-1">{author.name}</h1>
+  <h1 class="text-center py-8 px-4 rounded-lg border-indigo-900 shadow-xl font-bold m-1">
+    {author.name}
+  </h1>
 
-{#if author.image}
-  <SanityImage image={author.image} maxWidth={700} />
-{/if}
+  {#if author.image}
+    <SanityImage image={author.image} maxWidth={700} />
+  {/if}
 
-{#if author?.bio}
-  <PortableText
-    blocks={author.bio}
-    serializers={{
-      types: {
-        code: Code,
-        image: ImageBlock,
-        authorReference: AuthorBlock
-      },
-      marks: {
-        link: Link
-      }
-    }}
-  />
-{/if}
+  {#if author?.bio}
+    <PortableText
+      blocks={author.bio}
+      serializers={{
+        types: {
+          code: Code,
+          image: ImageBlock,
+          authorReference: AuthorBlock
+        },
+        marks: {
+          link: Link
+        }
+      }}
+    />
+  {/if}
 
-<h2 class="text-center m-2">Posts by {author.name}</h2>
+  <h2 class="text-center m-2">Posts by {author.name}</h2>
 
-<PostsGrid posts={author.posts} />
+  <PostsGrid posts={author.posts} />
 </div>

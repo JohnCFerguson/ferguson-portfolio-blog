@@ -1,5 +1,7 @@
-<footer class='fixed bottom-0 h-32 w-full left-1/2 transform -translate-x-1/2
- flex items-center justify-center bg-white footer-shadow-lg'>
+<footer
+  class="fixed bottom-0 h-32 w-full left-1/2 transform -translate-x-1/2
+ flex items-center justify-center bg-white footer-shadow-lg"
+>
   <a href="https://sanity.io">
     <svg viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"
       ><rect width="28" height="28" rx="3" fill="#F03E2F" /><path

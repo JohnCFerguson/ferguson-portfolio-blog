@@ -20,7 +20,8 @@
 </script>
 
 {#if image}
-  <img class="m-auto"
+  <img
+    class="m-auto"
     loading="lazy"
     src={urlFor(image).width(maxWidth).fit('fillmax')}
     alt={alt || image.alt || ''}
