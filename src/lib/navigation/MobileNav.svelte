@@ -1,6 +1,5 @@
 <script>
 	import Hamburger from './Hamburger.svelte'
-	import Menu from './Menu.svelte'
     import { onMount } from 'svelte';
     import {page} from '$app/stores'
     
@@ -39,6 +38,9 @@
             </li>
             <li>
                 <a class="flex justify-center hover:text-gray-700 hover:no-underline" data-mdb-ripple="true" data-mdb-ripple-color="dark" href='/'>Resume</a>
+            </li>
+            <li>
+                <a class="flex justify-center hover:text-gray-700 hover:no-underline" data-mdb-ripple="true" data-mdb-ripple-color="dark" href='/blog'>Blog</a>
             </li>
         </ul>
     </div>

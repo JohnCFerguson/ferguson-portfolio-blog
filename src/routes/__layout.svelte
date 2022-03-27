@@ -11,7 +11,9 @@
 <Header />
 <SideNav />
 <main class='content-area'>
-  <slot />
+  <div class='relative mb-36 mt-4 ml-2 mr-2 md:left-28 px-4 pt-4 pb-4 rounded-lg border-indigo-900 content-shadow-xl'>
+    <slot />
+  </div>
 </main>
 <Footer />
 <style>
