@@ -33,8 +33,8 @@
   export let author
 </script>
 
-<div class="relative ml-2 mr-2 md:left-28" >
-<h1 class="text-center m-2">{author.name}</h1>
+<div class="relative ml-2 mr-2 md:left-28  py-8 px-4 rounded-lg border-indigo-900 shadow-xl" >
+<h1 class="text-center py-8 px-4 rounded-lg border-indigo-900 shadow-xl font-bold m-1">{author.name}</h1>
 
 {#if author.image}
   <SanityImage image={author.image} maxWidth={700} />
