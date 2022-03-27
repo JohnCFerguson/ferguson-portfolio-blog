@@ -23,8 +23,8 @@
   <title>Blog</title>
 </svelte:head>
 
-<div class='relative ml-2 mr-2 md:left-28 '>
-  <h1 class="text-center text-2xl py-8 px-4 rounded-lg border-indigo-900 shadow-xl font-bold">Recent posts</h1>
+<div class='relative ml-2 mr-2 md:left-28'>
+  <h1 class="text-center py-8 px-4 rounded-lg border-indigo-900 shadow-xl font-bold">Recent posts</h1>
 
   <PostsGrid {posts} />
 </div>

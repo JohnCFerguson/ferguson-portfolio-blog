@@ -33,7 +33,8 @@
   export let author
 </script>
 
-<h1>{author.name}</h1>
+<div class="relative ml-2 mr-2 md:left-28" >
+<h1 class="text-center m-2">{author.name}</h1>
 
 {#if author.image}
   <SanityImage image={author.image} maxWidth={700} />
@@ -55,6 +56,7 @@
   />
 {/if}
 
-<h2>Posts by {author.name}</h2>
+<h2 class="text-center m-2">Posts by {author.name}</h2>
 
 <PostsGrid posts={author.posts} />
+</div>
