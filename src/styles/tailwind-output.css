@@ -629,10 +629,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 @media (min-width: 768px) {
 
-  .md\:left-32 {
-    left: 8rem;
-  }
-
   .md\:left-28 {
     left: 7rem;
   }
